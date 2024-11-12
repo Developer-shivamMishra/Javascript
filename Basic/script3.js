@@ -33,9 +33,53 @@ user.greetingOne = function(){
 
 }
 
-console.log(user.greeting())
-console.log(user.greetingOne())
+// console.log(user.greeting())
+// console.log(user.greetingOne())
 
 
 ///////////PART 2
+
+tinderuser.id = '134abc'
+tinderuser.name = 'sammy'
+//console.log(tinderuser)
+
+
+//Nested Object
+const regulerUser = {                
+    email:'sm22er@gamil.com',
+    full_Name:{
+        userfullName:{
+            first_Name :'Shivam',
+            last_Name : 'Mishra'
+        }
+    }
+}
+
+//console.log(regulerUser.full_Name.userfullName)
+
+//Merge
+const obj1 = {1:'a' , 2:'b'}
+const obj2 = {3:'a' , 4:'b'}
+
+//const obj3 = Object.assign({},obj1,obj2)
+//const obj3 = {...obj1, ...obj2}               //Spread operator
+
+// console.log(Object.keys(obj1))
+// console.log(Object.values(obj2))
+// console.log(Object.entries(obj2))
+// console.log(regulerUser.hasOwnProperty('email'))
+
+
+////////////////////////////        PART 3
+  //Distructor
+const Course  = {
+    CourseName : 'Javascript',
+    Price : '10000',
+    CourceInstructor : 'Michal'
+}
+
+// console.log(Course.CourceInstructor)
+
+const{CourseName} = Course
+console.log(CourseName)
 
