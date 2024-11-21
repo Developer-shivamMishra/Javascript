@@ -62,7 +62,7 @@ const obj1 = {1:'a' , 2:'b'}
 const obj2 = {3:'a' , 4:'b'}
 
 //const obj3 = Object.assign({},obj1,obj2)
-//const obj3 = {...obj1, ...obj2}               //Spread operator
+const obj3 = {...obj1, ...obj2}               //Spread operator
 
 // console.log(Object.keys(obj1))
 // console.log(Object.values(obj2))
@@ -78,8 +78,9 @@ const Course  = {
     CourceInstructor : 'Michal'
 }
 
-// console.log(Course.CourceInstructor)
+console.log(Course.CourceInstructor)
 
 const{CourseName} = Course
 console.log(CourseName)
+console.log(Course)
 

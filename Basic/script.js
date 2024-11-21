@@ -33,7 +33,7 @@ let score = "444aca"
 
 let ValueinNumber = Number(score)//Convert string into number
 // console.log(ValueinNumber) //Not A Number
-// console.log(typeof(ValueinNumber))
+//console.log(typeof(ValueinNumber))
 
 
 //***********************************OPERATION****************************
@@ -47,7 +47,7 @@ let ValueinNumber = Number(score)//Convert string into number
 
 let gameCounter = 100
 gameCounter++
-// console.log(gameCounter)
+//console.log(gameCounter)
 
 // **************************************COMPRISON*************************************
 
@@ -118,8 +118,8 @@ let myDate = new Date()
 // console.log(myDate.toLocaleDateString())
 
 let myTimestamp = Date.now()
-// console.log(myTimestamp)
-//console.log(Math.floor(myTimestamp/1000))
+console.log(myTimestamp)
+console.log(Math.floor(myTimestamp/1000))
 
 
 myDate.toLocaleString('default',{
