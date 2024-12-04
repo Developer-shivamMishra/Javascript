@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <ul id="images">
+        <li><img src="img/1454584.jpg"  onclick="alert('first')" id="first" width="200px" alt="" srcset="" /></li>
+        <li>
+          <img src="img/20230516_111050.jpg" id="second" width="200px" alt="" srcset="" />
+        </li>
+        <li>
+          <img src="img/20240219_133135.jpg" id="third" width="200px" alt="" srcset="" />
+        </li>
+        <li><a href="http://google.com" id="google">Google</a></li>
+      </ul>
+    </div>
+
+    <script>
+      //AttachEvent()
+        //jQuery - on
+        //EventPropogation
+//Read - type,timestamp,defaulPrevented,target,srcElement,currentTarget,clintX,clientY,screenX,altKey,ctrlKey,shiftkey
+        const images = document.querySelector("#images")
+        images.addEventListener("click",(e)=>{
+            // console.log(e);
+            
+            console.log("click inside the ul ")
+        },false)
+
+// //   false - Bubling
+//   true - capturing
+        const second = document.querySelector("#second")
+        second.addEventListener("click",(e)=>{
+        
+            
+            console.log("click second img ")
+            e.stopPropagation()
+            
+        },false)
+
+
+    //    const prevented = document.querySelector("#google")
+    //    prevented.addEventListener("click",(e)=>{
+    //          console.log("click only google");
+    //          e.preventDefault()
+    //          e.stopPropagation()
+    //       },false)
+    
+     //////
+          // const hidingImg = document.querySelector("#images")
+          // hidingImg.addEventListener("click",(e)=>{
+          //   console.log(e.target.tagName);
+          //   if (e.target.tagName === 'IMG') {
+          //       const removeit= e.target.parentNode
+          //   removeit.remove()
+          //   }
+            
+          // })
+   
+    </script>
+  </body>
+</html>
